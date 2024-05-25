@@ -18,6 +18,9 @@ body {
     box-sizing: inherit;
 }
 
+html {
+}
+
 body {
     color-scheme: light dark;
     display: flex;
@@ -30,6 +33,7 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎾</text></svg>") 16 0,auto;
 
     @media (prefers-color-scheme: dark) {
         background-color: var(--navy);
