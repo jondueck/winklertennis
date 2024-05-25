@@ -1,0 +1,37 @@
+:root {
+    --blue: #24507F;
+    --navy: #122840;
+    --green: #A2BF53;
+    --white: #f9f9f9;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    color-scheme: light dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-height: 100vh;
+    background: var(--green);
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--navy);
+        color: var(--green);
+    }
+}

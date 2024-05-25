@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="ground">
+    <line id="net_line" data-name="net line" class="cls-1" x1="959.6" y1="978.5" x2="959.6" y2="101.5"/>
+    <g id="service_line" data-name="service line">
+      <path class="cls-2" d="M509.4,211h900.5v657.9H509.4V211M502.3,203v673.9h914.8V203H502.3Z"/>
+    </g>
+    <line id="center_line" data-name="center line" class="cls-1" x1="1414.9" y1="539.6" x2="504.4" y2="539.6"/>
+    <g id="left_double_line" data-name="left double line">
+      <path class="cls-2" d="M117.8,877h1684.5v93.5H117.8v-93.5M110.6,869v109.5h1698.8v-109.5H110.6Z"/>
+    </g>
+    <g id="right_double_line" data-name="right double line">
+      <path class="cls-2" d="M117.8,109.5h1684.5v93.5H117.8v-93.5M110.6,101.5v109.5h1698.8v-109.5H110.6Z"/>
+    </g>
+  </g>
+</svg>
