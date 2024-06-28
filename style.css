@@ -1,8 +1,8 @@
 :root {
     --blue: #24507F;
     --navy: #122840;
-    --green: #A2BF53;
-    --white: #f9f9f9;
+    --green: #008d61;
+    --white: #f0efe7;
     --border: 1px solid white;
     --margin: clamp(0.25rem, 5vmin, 5vmax);
     font-family: sans-serif;
