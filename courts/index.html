@@ -12,14 +12,31 @@
     :root {
         color-scheme: light dark;
     }
+    html {
+        height: 100%;
+        min-height: 100vh;
+    }
     body {
         color: #008d61;
         background-color: #f0efe7;
+        min-height: 100%;
         @media (prefers-color-scheme: dark) {
             color: #f0efe7;
             background-color: black;
             background-color: color-mix(in srgb, black 75%, #008d61);
         }
+        grid-template-areas: "header" "main" "footer";
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    .site-header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    .site-footer {
+        grid-area: footer;
     }
 </style>
 
@@ -66,6 +83,10 @@
                     <dt>Lights</dt> 
                     <dd>Unavailable</dd>
                 </span>
+                <span>
+                    <dt>Windscreen</dt> 
+                    <dd>Available</dd>
+                </span>
             </span>
         </dl>
         <p class="court-description">Re-surfaced in 2023. Painted lines and movable nets for pickleball. Also known as “Lions Park”.</p>
@@ -98,6 +119,9 @@
                 <span>
                     <dt>Lights</dt> 
                     <dd>Available</dd>
+                </span><span>
+                    <dt>Windscreen</dt> 
+                    <dd>Unavailable</dd>
                 </span>
             </span>
         </dl>
