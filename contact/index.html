@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta property="og:locale" content="en_GB">
+<meta name="view-transition" content="same-origin" />
+<meta name="description" content="Send an email to Winkler Tennis Club">
+<meta name="author" content="Winkler Tennis Club">
+
+<title>Contact Winkler Tennis Club</title>
+<des
+
+<style>
+    :root {
+        color-scheme: light dark;
+    }
+    html {
+        height: 100%;
+        min-height: 100vh;
+    }
+    body {
+        color: #008d61;
+        background-color: #f0efe7;
+        min-height: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+        @media (prefers-color-scheme: dark) {
+            color: #f0efe7;
+            background-color: black;
+            background-color: color-mix(in srgb, black 75%, #008d61);
+        }
+        grid-template-areas: "header" "main" "footer";
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    .site-header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    .site-footer {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+  <header class="site-header">
+    <div class="wrap">
+        <a href="/">Winkler Tennis Club</a>
+
+    </div>
+</header>
+  <main>
+    
+<div class="wrap">
+    <h1 class="page-title">Contact Winkler Tennis Club</h1>
+
+    <form
+            action="https://formspree.io/f/xnqeklee"
+            method="POST"
+            >
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+            </form>
+
+<p class="fine-print">
+    Tennis courts in Winkler, Manitoba are managed by the <a href="https://cityofwinkler.ca/p/communityservices">City of Winkler</a>. Winkler Tennis Club is not affiliated with the courts.
+</p>
+</div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+                <img src="/src/img/wordmark-green.svg" alt="" class="site-logo">
+
+        <span>Since 2024</span>
+        <br>
+        <strong>Follow</strong>
+        <a href="https://www.instagram.com/winklertennisclub" rel="me">Instagram</a>
+    </div>
+</footer>
+
+</body>
+
+</html>
