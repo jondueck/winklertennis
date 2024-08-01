@@ -5,93 +5,71 @@
 <meta name="viewport" content="width=device-width">
 <meta property="og:locale" content="en_GB">
 <meta name="view-transition" content="same-origin" />
-<meta name="description" content="Send an email to Winkler Tennis Club">
-<meta name="author" content="Winkler Tennis Club">
 
-<title>Contact Winkler Tennis Club</title>
-
-<style>
-    :root {
-        color-scheme: light dark;
-    }
-    html {
-        height: 100%;
-        min-height: 100vh;
-    }
-    body {
-        color: #008d61;
-        background-color: #f0efe7;
-        min-height: 100%;
-        box-sizing: border-box;
-        padding: 1em;
-        @media (prefers-color-scheme: dark) {
-            color: #f0efe7;
-            background-color: black;
-            background-color: color-mix(in srgb, black 75%, #008d61);
-        }
-        grid-template-areas: "header" "main" "footer";
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-    }
-    .site-header {
-        grid-area: header;
-    }
-    main {
-        grid-area: main;
-    }
-    .site-footer {
-        grid-area: footer;
-    }
-</style>
+<link href="/style.css" rel="stylesheet" /><title>Contact Us | Winkler Tennis Club</title>
 
 <body>
   <header class="site-header">
-    <div class="wrap">
-        <!-- <span>🎾</span><br> -->
-        <a href="/">Winkler Tennis Club</a><br>
-        <a href="/courts/">/Courts</a> • 
-        <a href="/contact/">/Contact</a>
+    <div class="wrap site-nav">
+            <a href="/" class="site-nav-home">
+                <img src="/src/img/logo.svg" alt="" class="site-logo">
+            </a>
+            <a href="/about">About</a>
+            <a href="/courts">Courts</a>
+            <a href="/contact">Contact</a>
+            <a href="/join" class="site-nav-feature">Join</a>
+
     </div>
 </header>
   <main>
     
 <div class="wrap">
-    <h1 class="page-title">Contact Winkler Tennis Club</h1>
+    <h1 class="page-title">Contact Us</h1>
 
-    <form
-            action="https://formspree.io/f/xnqeklee"
-            method="POST"
-            >
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <br><br>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-             <br><br>
-            <button type="submit">Send</button>
-            </form>
-<br><br>
-<p class="fine-print" style="font-style: italic;">
-    Tennis courts in Winkler, Manitoba are managed by the <a href="https://cityofwinkler.ca/p/communityservices">City of Winkler</a>. Winkler Tennis Club is not affiliated with the courts.
-</p>
+    <div class="page-content">
+        
+<form
+    action="https://formspree.io/f/xnqeklee"
+    method="POST"
+>
+    <label>
+        Your email address:
+        <input type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea name="message"></textarea><br>
+    </label>
+    <button type="submit">Send</button>
+</form>
+    </div>
 </div>
   </main>
   <footer class="site-footer">
-    <div class="wrap">
-                <img src="/src/img/wordmark-green.svg" alt="" class="site-logo">
-        <span>👟</span><br>
-        <span>Since 2024</span>
-        <br>
-        <strong>Follow</strong>
-        <a href="https://www.instagram.com/winklertennisclub" rel="me">Instagram</a>
+    <div class="wrap" style="display: grid; grid-direction: row; grid-template-columns: 1fr 1fr; grid-gap: var(--space);">
+        <div>
+            <img src="/src/img/wordmark-green.svg" alt="" class="site-logo">
+
+            
+        </div>
+        <div>
+            <strong>Follow</strong><br>
+            <a href="https://www.instagram.com/winklertennisclub" rel="me">@winklertennisclub on Instagram</a>
+            
+        </div>
     </div>
 </footer>
 
+<link rel="stylesheet" href="https://use.typekit.net/aer2ycj.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49TMF06C6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49TMF06C6P');
+</script>
 </body>
 
 </html>

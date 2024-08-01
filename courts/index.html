@@ -6,46 +6,18 @@
 <meta property="og:locale" content="en_GB">
 <meta name="view-transition" content="same-origin" />
 
-<title>Winkler Tennis Courts | Winkler Tennis Club</title>
-
-<style>
-    :root {
-        color-scheme: light dark;
-    }
-    html {
-        height: 100%;
-        min-height: 100vh;
-    }
-    body {
-        color: #008d61;
-        background-color: #f0efe7;
-        min-height: 100%;
-        box-sizing: border-box;
-        padding: 1em;
-        @media (prefers-color-scheme: dark) {
-            color: #f0efe7;
-            background-color: black;
-            background-color: color-mix(in srgb, black 75%, #008d61);
-        }
-        grid-template-areas: "header" "main" "footer";
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-    }
-    .site-header {
-        grid-area: header;
-    }
-    main {
-        grid-area: main;
-    }
-    .site-footer {
-        grid-area: footer;
-    }
-</style>
+<link href="/style.css" rel="stylesheet" /><title>Winkler Tennis Courts | Winkler Tennis Club</title>
 
 <body>
   <header class="site-header">
-    <div class="wrap">
-        <a href="/">Winkler Tennis Club</a>
+    <div class="wrap site-nav">
+            <a href="/" class="site-nav-home">
+                <img src="/src/img/logo.svg" alt="" class="site-logo">
+            </a>
+            <a href="/about">About</a>
+            <a href="/courts">Courts</a>
+            <a href="/contact">Contact</a>
+            <a href="/join" class="site-nav-feature">Join</a>
 
     </div>
 </header>
@@ -54,101 +26,181 @@
 <div class="wrap">
     <h1 class="page-title">Winkler Tennis Courts</h1>
 
-    
+    <div class="page-content">
+        
 <ul class="court-list">
 
-    <li class="court-item">
+    <li class="court-item" itemprop="location" itemscope itemtype="https://schema.org/Place">
         <header>
-        <h2 class="court-title">Lion Fred Rietze Memorial Park</h2>
+        <h2 class="court-title" itemprop="name">Lion Fred Rietze Memorial Park</h2>
         <address class="court-address">
-            <a href="https://maps.app.goo.gl/7a6Sm7hdZHbJjA9fA">Linden Dr</a>
+            <a href="https://maps.app.goo.gl/7a6Sm7hdZHbJjA9fA" itemprop="streetAddress">Linden Dr</a>
         </address>
         <img src="/src/img/lion-court.jpg" alt="" class="court-image">
         </header>
         <dl class="court-meta">
             <span class="stats-primary">
-                <span><dt>Courts</dt><dd>2</dd></span>
-                <span><dt>Location</dt> <dd>Outdoor</dd></span>
-                <span><dt>Surface</dt> <dd>Hard</dd></span>
-            </span>
-            <span class="stats-secondary">
-                <span><dt>Orientation</dt> <dd>N/S</dd></span>
-                <span>
+                <span class="court-meta-stat"><dt>Courts</dt><dd>2</dd></span>
+                <span class="court-meta-stat"><dt>Location</dt> <dd>Outdoor</dd></span>
+                <meta itemprop="addressLocality" content="Winkler">
+                <meta itemprop="addressRegion" content="Manitoba">
+                <span class="court-meta-stat"><dt>Surface</dt> <dd>Hard</dd></span>
+            
+                <span class="court-meta-stat"><dt>Orientation</dt> <dd>N/S</dd></span>
+                <span class="court-meta-amenity">
                     <dt>Parking</dt> 
-                    <dd>Available</dd>
+                    <dd><img src="/src/img/icon-parking.svg" alt="Available" class="court-detail-icon"></dd>
                     </span>
-                <span>
+                <span class="court-meta-amenity">
                     <dt>Public Restrooms</dt> 
-                    <dd>Available</dd>
+                    <dd>
+                        
+                            <img src="/src/img/icon-restroom.svg" alt="Available" class="court-detail-icon">
+                        
+                    </dd>
                 </span>
-                <span>
+                <span class="court-meta-amenity">
                     <dt>Lights</dt> 
-                    <dd>Unavailable</dd>
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
                 </span>
-                <span>
+                <span class="court-meta-amenity">
                     <dt>Windscreen</dt> 
-                    <dd>Available</dd>
+                    <dd>
+                        
+                            <img src="/src/img/icon-windscreen.svg" alt="Available" class="court-detail-icon">
+                        
+                    </dd>
+                </span>
+                <span class="court-meta-amenity">
+                    <dt>Practice Backboard</dt> 
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
+                </span>
+                <span class="court-meta-amenity">
+                    <dt>Water</dt> 
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
                 </span>
             </span>
         </dl>
-        <p class="court-description">Re-surfaced in 2023. Painted lines and movable nets for pickleball. Also known as “Lions Park”.</p>
+        <p class="court-description">Re-surfaced in 2023. Painted lines and movable nets for pickleball.</p>
+        
+            
+            <span class="court-reservation">⚠ Typically reserved for Pickleball on Monday and Wednesday Evenings</span>
+            
+        
     </li>
 
-    <li class="court-item">
+    <li class="court-item" itemprop="location" itemscope itemtype="https://schema.org/Place">
         <header>
-        <h2 class="court-title">Parkland</h2>
+        <h2 class="court-title" itemprop="name">Parkland</h2>
         <address class="court-address">
-            <a href="https://maps.app.goo.gl/avAAxaqoVN1G1Rv47">Park St</a>
+            <a href="https://maps.app.goo.gl/avAAxaqoVN1G1Rv47" itemprop="streetAddress">Park St</a>
         </address>
         <img src="/src/img/parkland-court.jpg" alt="" class="court-image">
         </header>
         <dl class="court-meta">
             <span class="stats-primary">
-                <span><dt>Courts</dt><dd>2</dd></span>
-                <span><dt>Location</dt> <dd>Outdoor</dd></span>
-                <span><dt>Surface</dt> <dd>Hard</dd></span>
-            </span>
-            <span class="stats-secondary">
-                <span><dt>Orientation</dt> <dd>N/S</dd></span>
-                <span>
+                <span class="court-meta-stat"><dt>Courts</dt><dd>2</dd></span>
+                <span class="court-meta-stat"><dt>Location</dt> <dd>Outdoor</dd></span>
+                <meta itemprop="addressLocality" content="Winkler">
+                <meta itemprop="addressRegion" content="Manitoba">
+                <span class="court-meta-stat"><dt>Surface</dt> <dd>Hard</dd></span>
+            
+                <span class="court-meta-stat"><dt>Orientation</dt> <dd>N/S</dd></span>
+                <span class="court-meta-amenity">
                     <dt>Parking</dt> 
-                    <dd>Available</dd>
+                    <dd><img src="/src/img/icon-parking.svg" alt="Available" class="court-detail-icon"></dd>
                     </span>
-                <span>
+                <span class="court-meta-amenity">
                     <dt>Public Restrooms</dt> 
-                    <dd>Available</dd>
+                    <dd>
+                        
+                            <img src="/src/img/icon-restroom.svg" alt="Available" class="court-detail-icon">
+                        
+                    </dd>
                 </span>
-                <span>
+                <span class="court-meta-amenity">
                     <dt>Lights</dt> 
-                    <dd>Available</dd>
-                </span><span>
+                    <dd>
+                        
+                            <img src="/src/img/icon-light.svg" alt="Available" class="court-detail-icon">
+                        
+                    </dd>
+                </span>
+                <span class="court-meta-amenity">
                     <dt>Windscreen</dt> 
-                    <dd>Unavailable</dd>
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
+                </span>
+                <span class="court-meta-amenity">
+                    <dt>Practice Backboard</dt> 
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
+                </span>
+                <span class="court-meta-amenity">
+                    <dt>Water</dt> 
+                    <dd>
+                         
+                            <img src="/src/img/icon-no.svg" alt="Unavailable" class="court-detail-icon"> 
+                        
+                    </dd>
                 </span>
             </span>
         </dl>
         <p class="court-description">Reduced from 3 to 2 courts in 2021.</p>
+        
     </li>
 
 </ul>
 
-<p class="fine-print">
+<center class="fine-print">
     Tennis courts are managed by the <a href="https://cityofwinkler.ca/p/communityservices">City of Winkler</a>. Winkler Tennis Club is not affiliated with the courts.
-</p>
+</center>
+    </div>
 </div>
   </main>
   <footer class="site-footer">
-    <div class="wrap">
-                <img src="/src/img/wordmark-green.svg" alt="" class="site-logo">
+    <div class="wrap" style="display: grid; grid-direction: row; grid-template-columns: 1fr 1fr; grid-gap: var(--space);">
+        <div>
+            <img src="/src/img/wordmark-green.svg" alt="" class="site-logo">
 
-        <span>Since 2024</span>
-        <br>
-        <strong>Follow</strong>
-        <a href="https://www.instagram.com/winklertennisclub" rel="me">Instagram</a>
+            
+        </div>
+        <div>
+            <strong>Follow</strong><br>
+            <a href="https://www.instagram.com/winklertennisclub" rel="me">@winklertennisclub on Instagram</a>
+            
+        </div>
     </div>
 </footer>
 
 <link rel="stylesheet" href="https://use.typekit.net/aer2ycj.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49TMF06C6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49TMF06C6P');
+</script>
 </body>
 
 </html>
