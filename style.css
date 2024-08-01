@@ -292,6 +292,9 @@ select {
     &:focus {
         background-color: white;
         border: 1px solid var(--primary);
+        @media (prefers-color-scheme: dark) {
+            background-color: black;
+        }
     }
 }
 
