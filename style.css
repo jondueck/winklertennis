@@ -47,6 +47,10 @@ address {
     scroll-margin-block: 1rlh;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* STYLE */
 
 :root {
