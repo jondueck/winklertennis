@@ -574,3 +574,85 @@ mark {
     }
 }
 
+.notice {
+    padding: 1em;
+    grid-area: notice;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* color: var(--white); */
+    background-color: var(--accent) !important;
+
+    a {
+        color: inherit;
+        border: 1px solid;
+        border-radius: var(--radius);
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        /* font-family: var(--serif); */
+    }
+}
+
+.notice,
+.feature {
+    background-color: var(--primary);
+    border-radius: var(--radius);
+}
+
+.feature {
+    min-height: 25vh;
+    padding: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+    text-decoration: none;
+
+    &:last-of-type {
+        background-color: var(--blue);
+    }
+    &:hover {
+        background-color: var(--accent);
+        color: var(--primary);
+    }
+}
+
+.home main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--space);
+    gap: 1em;
+    padding-inline: var(--space);
+    display: grid;
+    grid-template-areas: "banner banner" "notice notice" "feature1 feature2";
+}
+
+.banner {
+    min-height: 66vh;
+    grid-area: banner;
+}
+
+.feature:nth-of-type(1) {
+    grid-area: feature1;
+}
+
+.feature:nth-of-type(2) {
+    grid-area: feature2;
+}
+
+.feature h2 {
+    line-height: 1;
+    strong {
+        font-family: var(--serif);
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        display: block;
+        font-size: 2em;
+        font-weight: 400;
+    }
+}
