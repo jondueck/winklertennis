@@ -170,7 +170,7 @@ h1,
     display: grid;
     grid-gap: var(--space);
     margin-bottom: var(--space);
-    @media (min-width: 52.5rem) {
+    @media (min-width: 50rem) {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -178,7 +178,7 @@ h1,
 .court-item {
     max-width: 100%;
     position: relative;
-    padding: 2em;
+    padding: var(--space);
     /* background: color-mix(in srgb, white 50%, var(--background)); */
     border-radius: var(--radius);
     border: 1px solid var(--primary);
@@ -415,11 +415,15 @@ input[type="submit"] {
     text-transform: uppercase;
     color: var(--primary);
     font-size: 3rem;
-    line-height: 1;
+    line-height: 0.9;
     text-align: center;
-    height: 1em;
     z-index: 100;
     position: relative;
+    color: var(--text);
+    height: fit-content;
+    @media(min-width: 40rem) {
+        height: 1em;
+    }
 }
 
 .court-item header {
@@ -583,8 +587,8 @@ mark {
     flex-wrap: wrap;
     gap: 1ch;
     /* color: var(--white); */
-    background-color: var(--accent);
-    /* color: var(--background); */
+    /* background-color: var(--accent); */
+    color: var(--background) !important;
 
     a {
         color: inherit;
