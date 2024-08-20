@@ -508,7 +508,7 @@ input[type="submit"] {
 }
 
 .court-reservation {
-    font-size: small;
+    font-size: smaller;
     display: block;
     border: 1px solid var(--grey);
     border-radius: var(--radius);
