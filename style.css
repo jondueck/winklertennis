@@ -580,8 +580,11 @@ mark {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1ch;
     /* color: var(--white); */
-    background-color: var(--accent) !important;
+    background-color: var(--accent);
+    /* color: var(--background); */
 
     a {
         color: inherit;
@@ -591,6 +594,7 @@ mark {
         text-decoration: none;
         padding: 0.5em 1em;
         font-weight: bold;
+        line-height: 1;
         /* font-family: var(--serif); */
     }
 }
